@@ -17,8 +17,7 @@ UPLOAD_FOLDER = "data"
 CHROMA_PERSIST_DIRECTORY = "db"
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-# Using the powerful 'gemini-1.5-flash' model as requested.
-GEMINI_MODEL_NAME = "gemini-1.5-flash"
+GEMINI_MODEL_NAME = "gemini-2.0-flash"
 
 # --- Initialization ---
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -31,7 +30,7 @@ genai.configure(api_key=GEMINI_API_KEY)
 app = Flask(__name__)
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
 
-# --- PDF & RAG Logic (Same as before) ---
+# --- PDF & RAG Logic ---
 def extract_pages_text(pdf_path: str) -> List[Tuple[int, str]]:
     doc = fitz.open(pdf_path)
     pages = []
