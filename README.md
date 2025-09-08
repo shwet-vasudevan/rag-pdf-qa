@@ -114,6 +114,6 @@ flask run
 
 The application will now be running. Open your web browser and navigate to:
 
-https://www.google.com/search?q=http://127.0.0.1:5000
+http://127.0.0.1:5000/
 
 You can now upload a PDF and start asking questions!
