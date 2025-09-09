@@ -17,7 +17,7 @@ UPLOAD_FOLDER = "data"
 CHROMA_PERSIST_DIRECTORY = "db"
 EMBEDDING_MODEL_NAME = "sentence-transformers/all-mpnet-base-v2"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-GEMINI_MODEL_NAME = "gemini-2.0-flash"
+GEMINI_MODEL_NAME = "gemini-1.5-flash"
 
 # --- Initialization ---
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)

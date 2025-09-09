@@ -40,7 +40,7 @@ Python, Flask
 
 ### Language Model
 
-Google Gemini 2.0 Flash
+Google Gemini 1.5 Flash
 
 ### Vector Database
 
